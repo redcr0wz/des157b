@@ -1,0 +1,169 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f6efe7;
+    color: #e1280f;
+    transition: all 2s;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Source Code Pro", monospace;
+}
+
+body.switch {
+    background-color: #201d28;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 3em;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+}
+
+#banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+}
+
+h1, h2, footer p {
+    margin: 0.25em;
+}
+
+h2, footer p {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    flex: 1;
+    margin: 0 .25em;
+    padding: 1em;
+}
+
+a {
+    color: #e1280f;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section h3 {
+    text-transform: uppercase;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: 0.75em;
+    color: #f6efe7;
+    background-color: #e1280f;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+section a:hover {
+    background-color: #f6efe7;
+    color: #c21e08
+}
+
+section.switch a, footer.switch {
+    color: #201d28;
+}
+
+section.switch a:hover {
+    background-color: none;
+    color: rgb(235, 235, 235);
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+main {
+    display: flex;
+}
+
+#sections {
+    display: flex;
+    flex: 1;
+}
+
+#sections {
+    flex: 2;
+}
+
+#graphic {
+    flex: 1;
+}
+
+footer {
+    background-color: #e1280f;
+    color: #f6efe7;
+    width: 100vw;
+    padding: 0.75em;
+}
+
+#graphic {
+    justify-content: flex-start;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h1 span {
+    animation: blink 1.5s steps(2, jump-none) infinite;
+}
+
+@keyframes blink {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
