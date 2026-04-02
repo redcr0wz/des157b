@@ -4,7 +4,7 @@
     const button = document.querySelector('#switch');
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
-    const footer = document.querySelector('footer p');
+    const footer = document.querySelector('footer');
     const sections = document.querySelectorAll('section')
     let mode = 'creation';
 

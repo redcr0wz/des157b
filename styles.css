@@ -113,8 +113,8 @@ section.switch a, footer.switch {
 }
 
 section.switch a:hover {
-    background-color: none;
-    color: rgb(235, 235, 235);
+    background-color: #201d28;
+    color: #e1280f;
 }
 
 section ul {
@@ -166,4 +166,8 @@ h1 span {
 @keyframes blink {
   from {opacity: 1;}
   to {opacity: 0;}
+}
+
+h2 a:hover {
+    text-decoration: none;
 }
