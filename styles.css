@@ -147,12 +147,12 @@ h2 {
 }
 
 h1 span {
-    animation: blink 1.5s steps(2, jump-none) infinite;
+    animation: blink 1.5s steps(2, start) infinite;
 }
 
 @keyframes blink {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {visibility: visible;}
+  to {visibility: hidden;}
 }
 
 h2 a:hover {
