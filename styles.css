@@ -50,13 +50,13 @@ h2, footer p, footer h1 {
 
 main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 1em auto;
 }
 
 main section {
     flex: 1;
-    margin: 0 .25em;
+    margin: 0 0.25em;
     padding: 1em;
 }
 
@@ -116,15 +116,6 @@ section ul {
 
 #sections {
     display: flex;
-    flex: 1;
-}
-
-#sections {
-    flex: 2;
-}
-
-#graphic {
-    flex: 1;
 }
 
 footer {
