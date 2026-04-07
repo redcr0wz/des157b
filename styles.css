@@ -116,6 +116,7 @@ section ul {
 
 #sections {
     display: flex;
+    flex: 3;
 }
 
 footer {
@@ -127,6 +128,7 @@ footer {
 
 #graphic {
     justify-content: flex-start;
+    flex: 2;
 }
 
 h1, h3 {
