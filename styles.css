@@ -52,7 +52,6 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 1em auto;
-    width: 100vw;
 }
 
 main section {
