@@ -20,8 +20,6 @@
     let i = 0;
     let showing = true;
 
-    notes.forEach(function(note) { note.className = 'hidden'; });
-
     setInterval(function() {
         if (showing) {
             notes[i].className = 'showing';
@@ -35,7 +33,7 @@
             i = 0;
             showing = !showing;
         }
-    }, 400);
+    }, 500);
 
     // mute and unmute
 
