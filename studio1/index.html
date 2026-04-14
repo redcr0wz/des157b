@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Video!</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <video id="jazz" muted loop autoplay playsinline>
+
+            <source src="media/jazz.mp4" type="video/mp4">
+            <source src="media/jazz.webm" type="video/webm">
+
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/jazz.mp4">link to the video</a>
+                instead.</p>
+        </video>
+        <img id="staff" src="images/staff.svg" alt="music">
+        <section id="music">
+            <img id="note1" src="images/note1.svg" alt="J note" class="hidden">
+            <img id="note2" src="images/note2.svg" alt="A note" class="hidden">
+            <img id="note3" src="images/note3.svg" alt="Z note" class="hidden">
+            <img id="note4" src="images/note3.svg" alt="Z note" class="hidden">
+            <img id="note5" src="images/note4.svg" alt="Y note" class="hidden">
+        </section>
+        <i class="fas fa-expand"></i>
+    </div>
+</body>
+</html>

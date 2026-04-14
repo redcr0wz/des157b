@@ -1,0 +1,84 @@
+body {
+    margin: auto;
+    background-color: #2e2a29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    max-width: 1100px;
+    transition: filter 2s ease;
+}
+
+video:hover {
+    filter: sepia(1);
+}
+
+#container {
+    position: relative;
+}
+
+#staff {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    filter: drop-shadow(2px 2px 4px #f0d6c6);
+}
+
+#staff:hover {
+    cursor: pointer;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: #170F0F;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.showing {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#note1 {
+    position: absolute;
+    bottom: 17%;
+    right: 70%;
+}
+
+#note2 {
+    position: absolute;
+    bottom: 14%;
+    right: 55%;
+}
+
+#note3 {
+    position: absolute;
+    bottom: 10%;
+    right: 37%;
+}
+
+#note4 {
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+}
+
+#note5 {
+    position: absolute;
+    bottom: 14%;
+    right: 9%;
+}
