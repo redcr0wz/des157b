@@ -55,7 +55,7 @@ video:hover {
 .fa-rotate {
     position: absolute;
     font-size: 36px;
-    color: #ffffff;
+    color: antiquewhite;
 }
 
 .hidden {
@@ -116,5 +116,29 @@ video:hover {
     
     #container {
         display: none;
+    }
+}
+
+.fa-music {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: antiquewhite;
+    transform: translate(-50%, -50%);
+    animation: note 2s infinite alternate ease-in-out;
+}
+
+@keyframes note {
+    0% {
+        opacity: .5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+        transform: scale(1.5);
     }
 }

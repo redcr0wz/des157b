@@ -42,4 +42,12 @@
     staff.addEventListener('click', function() {
         jazz.muted = !jazz.muted;
     });
+
+    // loading
+    
+    const loading = document.querySelector('.fa-music');
+
+    jazz.addEventListener('playing', function() {
+        loading.style.display = 'none';
+    })
 })();
