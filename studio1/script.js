@@ -49,5 +49,6 @@
 
     jazz.addEventListener('playing', function() {
         loading.style.display = 'none';
+        staff.className = 'showing';
     })
 })();
