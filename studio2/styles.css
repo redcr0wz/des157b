@@ -23,6 +23,9 @@ body {
     background-position: center;
     font-size: 1em;
     transition: translate 0.5s ease;
+    z-index: 0;
+    position: absolute;
+    top: 90px;
 }
 
 #selector select {
@@ -30,8 +33,8 @@ body {
     height: 15%;
 }
 
-#selector:hover {
-    translate: 0 15px;
+#selector:hover, #selector:focus {
+    translate: 0 -60px;
 }
 
 #tv {
@@ -43,11 +46,18 @@ body {
     justify-content: center;
     align-items: center;
     filter: drop-shadow(2px -5px 8px rgba(4, 4, 23, 1));
+    z-index: 1;
+    margin-top: 17%;
 }
 
 #tv p {
     color: white;
     font-size: 1.5em;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    filter: drop-shadow(0px 2px 3px rgba(4, 4, 23, 1));
 }
 
 #graphic {
@@ -55,7 +65,7 @@ body {
     bottom: 0;
     right: 0;
     height: 35%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .container {
@@ -102,4 +112,6 @@ body {
     from {transform: translateY(  0%);}
       to {transform: translateY(100%);}
 }
+
+
 
