@@ -9,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Add link to any google fonts used here -->
-        <!-- TODO: ADD FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
 
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
@@ -21,16 +23,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="tv">
-        
-        <img src="#" alt="me and my bf">
+    <div id="selector">
+        <label for="date">CHOOSE A DATE</label>
+            <select name="date" id="date">
+            <option>February 23, 2025</option>
+        </select>
     </div>
 
-    <div id="selector">
-        <label for="date">Choose a date:</label>
-            <select name="date" id="date">
-            <option>---</option>
-        </select>
+    <img src="images/pair.jpg" alt="#" id="graphic">
+    <div id="tv">
+        <p>None :(</p>
     </div>
 </body>
 </html>
