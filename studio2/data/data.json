@@ -1,438 +1,163 @@
 {
-   "date1": {
-      "date": "January 11, 2025",
-      "movies": [
-         {
-            "title": "Donnie Darko",
-            "imgsrc": "images/donnie-darko.jpg"
-         },
-         {
-            "title": "Cube",
-            "imgsrc": "images/cube.jpg"
-         },
-         {
-            "title": "Willy's Wonderland",
-            "imgsrc": "images/willys-wonderland.jpg"
-         }
-      ]
-   },
-   "date2": {
-      "date": "January 18, 2025",
-      "movies": [
-         {
-            "title": "Hellbound: Hellraiser II",
-            "imgsrc": "images/hellbound-hellraiser-ii.jpg"
-         },
-         {
-            "title": "V/H/S",
-            "imgsrc": "images/vhs.jpg"
-         },
-         {
-            "title": "House of 1000 Corpses",
-            "imgsrc": "images/house-of-1000-corpses.jpg"
-         }
-      ]
-   },
-   "date3": {
-      "date": "January 25, 2025",
-      "movies": [
-         {
-            "title": "Zodiac",
-            "imgsrc": "images/zodiac.jpg"
-         }
-      ]
-   },
-   "date4": {
-      "date": "February 1, 2025",
-      "movies": [
-         {
-            "title": "Logan's Run",
-            "imgsrc": "images/logans-run.jpg"
-         },
-         {
-            "title": "A Fistful of Dollars",
-            "imgsrc": "images/a-fistful-of-dollars.jpg"
-         }
-      ]
-   },
-   "date5": {
-      "date": "February 8, 2025",
-      "movies": []
-   },
-   "date6": {
-      "date": "February 15, 2025",
-      "movies": [
-         {
-            "title": "The Blair Witch Project",
-            "imgsrc": "images/blair-witch-project.jpg"
-         },
-         {
-            "title": "Catch Me If You Can",
-            "imgsrc": "images/catch-me-if-you-can.jpg"
-         }
-      ]
-   },
-   "date7": {
-      "date": "February 23, 2025",
-      "movies": [
-         {
-            "title": "Interstellar",
-            "imgsrc": "images/interstellar.jpg"
-         }
-      ]
-   },
-   "date8": {
-      "date": "March 2, 2025",
-      "movies": [
-         {
-            "title": "Face/Off",
-            "imgsrc": "images/face-off.jpg"
-         },
-         {
-            "title": "Law Abiding Citizen",
-            "imgsrc": "images/law-abiding-citizen.jpg"
-         }
-      ]
-   },
-   "date9": {
-      "date": "March 15, 2025",
-      "movies": [
-         {
-            "title": "For a Few Dollars More",
-            "imgsrc": "images/for-a-few-dollars-more.jpg"
-         }
-      ]
-   },
-   "date10": {
-      "date": "March 22, 2025",
-      "movies": []
-   },
-   "date11": {
-      "date": "March 29, 2025",
-      "movies": []
-   },
-   "date12": {
-      "date": "April 5, 2025",
-      "movies": []
-   },
-   "date13": {
-      "date": "April 12, 2025",
-      "movies": []
-   },
-   "date14": {
-      "date": "April 19, 2025",
-      "movies": [
-         {
-            "title": "10 Cloverfield Lane",
-            "imgsrc": "images/10-cloverfield-lane.jpg"
-         },
-         {
-            "title": "Jeepers Creepers",
-            "imgsrc": "images/jeepers-creepers.jpg"
-         }
-      ]
-   },
-   "date15": {
-      "date": "April 26, 2025",
-      "movies": []
-   },
-   "date16": {
-      "date": "May 3, 2025",
-      "movies": []
-   },
-   "date17": {
-      "date": "May 13, 2025",
-      "movies": [
-         {
-            "title": "The Princess Bride",
-            "imgsrc": "images/the-princess-bride.jpg"
-         },
-         {
-            "title": "Longlegs",
-            "imgsrc": "images/longlegs.jpg"
-         },
-         {
-            "title": "Ocean’s Eleven",
-            "imgsrc": "images/oceans-eleven.jpg"
-         }
-      ]
-   },
-   "date18": {
-      "date": "May 24, 2025",
-      "movies": []
-   },
-   "date19": {
-      "date": "May 31, 2025",
-      "movies": []
-   },
-   "date20": {
-      "date": "June 7, 2025",
-      "movies": []
-   },
-   "date21": {
-      "date": "June 14, 2025",
-      "movies": []
-   },
-   "date22": {
-      "date": "June 21, 2025",
-      "movies": []
-   },
-   "date23": {
-      "date": "June 28, 2025",
-      "movies": []
-   },
-   "date24": {
-      "date": "June 28, 2025",
-      "movies": []
-   },
-   "date25": {
-      "date": "July 5, 2025",
-      "movies": []
-   },
-   "date26": {
-      "date": "July 12, 2025",
-      "movies": []
-   },
-   "date27": {
-      "date": "July 19, 2025",
-      "movies": []
-   },
-   "date28": {
-      "date": "July 26, 2025",
-      "movies": []
-   },
-   "date29": {
-      "date": "August 2, 2025",
-      "movies": [
-         {
-            "title": "Dota: Dragon's Blood",
-            "imgsrc": "images/dota-dragons-blood.jpg"
-         }
-      ]
-   },
-   "date30": {
-      "date": "August 9, 2025",
-      "movies": [
-         {
-            "title": "Dota: Dragon's Blood",
-            "imgsrc": "images/dota-dragons-blood.jpg"
-         }
-      ]
-   },
-   "date31": {
-      "date": "August 16, 2025",
-      "movies": [
-         {
-            "title": "Dota: Dragon's Blood",
-            "imgsrc": "images/dota-dragons-blood.jpg"
-         }
-      ]
-   },
-   "date32": {
-      "date": "August 23, 2025",
-      "movies": []
-   },
-   "date33": {
-      "date": "August 30, 2025",
-      "movies": []
-   },
-   "date34": {
-      "date": "September 6, 2025",
-      "movies": []
-   },
-   "date35": {
-      "date": "September 13, 2025",
-      "movies": []
-   },
-   "date36": {
-      "date": "September 20, 2025",
-      "movies": []
-   },
-   "date37": {
-      "date": "September 28, 2025",
-      "movies": [
-         {
-            "title": "Terrifier 2",
-            "imgsrc": "images/terrifier-2.jpg"
-         }
-      ]
-   },
-   "date38": {
-      "date": "October 4, 2025",
-      "movies": []
-   },
-   "date39": {
-      "date": "October 11, 2025",
-      "movies": []
-   },
-   "date40": {
-      "date": "October 18, 2025",
-      "movies": []
-   },
-   "date41": {
-      "date": "October 22, 2025",
-      "movies": [
-         {
-            "title": "Dream Scenario",
-            "imgsrc": "images/dream-scenario.jpg"
-         },
-         {
-            "title": "V/H/S/2",
-            "imgsrc": "images/vhs-2.jpg"
-         }
-      ]
-   },
-   "date42": {
-      "date": "November 1, 2025",
-      "movies": []
-   },
-   "date43": {
-      "date": "November 9, 2025",
-      "movies": [
-         {
-            "title": "The Long Walk",
-            "imgsrc": "images/the-long-walk.jpg"
-         }
-      ]
-   },
-   "date44": {
-      "date": "November 18, 2025",
-      "movies": []
-   },
-   "date45": {
-      "date": "November 29, 2025",
-      "movies": []
-   },
-   "date46": {
-      "date": "December 6, 2025",
-      "movies": []
-   },
-   "date47": {
-      "date": "December 18, 2025",
-      "movies": [
-         {
-            "title": "Frankenstein",
-            "imgsrc": "images/frankenstein.jpg"
-         },
-         {
-            "title": "Mickey 17",
-            "imgsrc": "images/mickey-17.jpg"
-         },
-         {
-            "title": "Battle Royale",
-            "imgsrc": "images/battle-royale.jpg"
-         }
-      ]
-   },
-   "date48": {
-      "date": "December 27, 2025",
-      "movies": []
-   },
-   "date49": {
-      "date": "January 3, 2025",
-      "movies": []
-   },
-   "date50": {
-      "date": "January 11, 2025",
-      "movies": [
-         {
-            "title": "Alien: Romulus",
-            "imgsrc": "images/alien-romulus.jpg"
-         }
-      ]
-   },
-   "date51": {
-      "date": "January 18, 2025",
-      "movies": [
-         {
-            "title": "Vivarium",
-            "imgsrc": "images/vivarium.jpg"
-         },
-         {
-            "title": "Final Destination Bloodlines",
-            "imgsrc": "images/final-destination-bloodlines.jpg"
-         }
-      ]
-   },
-   "date52": {
-      "date": "January 26, 2025",
-      "movies": []
-   },
-   "date53": {
-      "date": "February 7, 2026",
-      "movies": [
-         {
-            "title": "The Menu",
-            "imgsrc": "images/the-menu.jpg"
-         }
-      ]
-   },
-   "date54": {
-      "date": "February 20, 2026",
-      "movies": [
-         {
-            "title": "In Time",
-            "imgsrc": "images/in-time.jpg"
-         },
-         {
-            "title": "The Cabin in the Woods",
-            "imgsrc": "images/the-cabin-in-the-woods.jpg"
-         },
-         {
-            "title": "Lord of War",
-            "imgsrc": "images/lord-of-war.jpg"
-         }
-      ]
-   },
-   "date55": {
-      "date": "March 1, 2026",
-      "movies": [
-         {
-            "title": "Sinners",
-            "imgsrc": "images/sinners.jpg"
-         }
-      ]
-   },
-   "date56": {
-      "date": "March 7, 2026",
-      "movies": []
-   },
-   "date57": {
-      "date": "March 14, 2026",
-      "movies": []
-   },
-   "date58": {
-      "date": "March 21, 2026",
-      "movies": []
-   },
-   "date59": {
-      "date": "March 27, 2026",
-      "movies": [
-         {
-            "title": "The Ninth Gate",
-            "imgsrc": "images/the-ninth-gate.jpg"
-         },
-         {
-            "title": "Carrie",
-            "imgsrc": "images/carrie.jpg"
-         }
-      ]
-   },
-   "date60": {
-      "date": "April 5, 2026",
-      "movies": []
-   },
-   "date61": {
-      "date": "April 12, 2026",
-      "movies": []
-   },
-   "date62": {
-      "date": "April 18, 2026",
-      "movies": [
-         {
-            "title": "Jaws",
-            "imgsrc": "images/jaws.jpg"
-         }
-      ]
-   }
+  "date1": {
+    "date": "January 11, 2025",
+    "movies": [
+      { "title": "Donnie Darko", "imgsrc": "images/donnie-darko.jpg" },
+      { "title": "Cube", "imgsrc": "images/cube.jpg" },
+      { "title": "Willy's Wonderland", "imgsrc": "images/willys-wonderland.jpg" }
+    ]
+  },
+  "date2": {
+    "date": "January 18, 2025",
+    "movies": [
+      { "title": "Hellbound: Hellraiser II", "imgsrc": "images/hellbound-hellraiser-ii.jpg" },
+      { "title": "V/H/S", "imgsrc": "images/vhs.jpg" },
+      { "title": "House of 1000 Corpses", "imgsrc": "images/house-of-1000-corpses.jpg" }
+    ]
+  },
+  "date3": {
+    "date": "January 25, 2025",
+    "movies": [
+      { "title": "Zodiac", "imgsrc": "images/zodiac.jpg" }
+    ]
+  },
+  "date4": {
+    "date": "February 1, 2025",
+    "movies": [
+      { "title": "Logan's Run", "imgsrc": "images/logans-run.jpg" },
+      { "title": "A Fistful of Dollars", "imgsrc": "images/a-fistful-of-dollars.jpg" }
+    ]
+  },
+  "date5": {
+    "date": "February 15, 2025",
+    "movies": [
+      { "title": "The Blair Witch Project", "imgsrc": "images/blair-witch-project.jpg" },
+      { "title": "Catch Me If You Can", "imgsrc": "images/catch-me-if-you-can.jpg" }
+    ]
+  },
+  "date6": {
+    "date": "February 23, 2025",
+    "movies": [
+      { "title": "Interstellar", "imgsrc": "images/interstellar.jpg" }
+    ]
+  },
+  "date7": {
+    "date": "March 2, 2025",
+    "movies": [
+      { "title": "Face/Off", "imgsrc": "images/face-off.jpg" },
+      { "title": "Law Abiding Citizen", "imgsrc": "images/law-abiding-citizen.jpg" }
+    ]
+  },
+  "date8": {
+    "date": "March 15, 2025",
+    "movies": [
+      { "title": "For a Few Dollars More", "imgsrc": "images/for-a-few-dollars-more.jpg" }
+    ]
+  },
+  "date9": {
+    "date": "April 19, 2025",
+    "movies": [
+      { "title": "10 Cloverfield Lane", "imgsrc": "images/10-cloverfield-lane.jpg" },
+      { "title": "Jeepers Creepers", "imgsrc": "images/jeepers-creepers.jpg" }
+    ]
+  },
+  "date10": {
+    "date": "May 13, 2025",
+    "movies": [
+      { "title": "The Princess Bride", "imgsrc": "images/the-princess-bride.jpg" },
+      { "title": "Longlegs", "imgsrc": "images/longlegs.jpg" },
+      { "title": "Ocean’s Eleven", "imgsrc": "images/oceans-eleven.jpg" }
+    ]
+  },
+  "date11": {
+    "date": "August 2, 2025",
+    "movies": [
+      { "title": "Dota: Dragon's Blood", "imgsrc": "images/dota-dragons-blood.jpg" }
+    ]
+  },
+  "date12": {
+    "date": "August 9, 2025",
+    "movies": [
+      { "title": "Dota: Dragon's Blood", "imgsrc": "images/dota-dragons-blood.jpg" }
+    ]
+  },
+  "date13": {
+    "date": "August 16, 2025",
+    "movies": [
+      { "title": "Dota: Dragon's Blood", "imgsrc": "images/dota-dragons-blood.jpg" }
+    ]
+  },
+  "date14": {
+    "date": "September 28, 2025",
+    "movies": [
+      { "title": "Terrifier 2", "imgsrc": "images/terrifier-2.jpg" }
+    ]
+  },
+  "date15": {
+    "date": "October 22, 2025",
+    "movies": [
+      { "title": "Dream Scenario", "imgsrc": "images/dream-scenario.jpg" },
+      { "title": "V/H/S/2", "imgsrc": "images/vhs-2.jpg" }
+    ]
+  },
+  "date16": {
+    "date": "November 9, 2025",
+    "movies": [
+      { "title": "The Long Walk", "imgsrc": "images/the-long-walk.jpg" }
+    ]
+  },
+  "date17": {
+    "date": "December 18, 2025",
+    "movies": [
+      { "title": "Frankenstein", "imgsrc": "images/frankenstein.jpg" },
+      { "title": "Mickey 17", "imgsrc": "images/mickey-17.jpg" },
+      { "title": "Battle Royale", "imgsrc": "images/battle-royale.jpg" }
+    ]
+  },
+  "date18": {
+    "date": "January 11, 2025",
+    "movies": [
+      { "title": "Alien: Romulus", "imgsrc": "images/alien-romulus.jpg" }
+    ]
+  },
+  "date19": {
+    "date": "January 18, 2025",
+    "movies": [
+      { "title": "Vivarium", "imgsrc": "images/vivarium.jpg" },
+      { "title": "Final Destination Bloodlines", "imgsrc": "images/final-destination-bloodlines.jpg" }
+    ]
+  },
+  "date20": {
+    "date": "February 7, 2026",
+    "movies": [
+      { "title": "The Menu", "imgsrc": "images/the-menu.jpg" }
+    ]
+  },
+  "date21": {
+    "date": "February 20, 2026",
+    "movies": [
+      { "title": "In Time", "imgsrc": "images/in-time.jpg" },
+      { "title": "The Cabin in the Woods", "imgsrc": "images/the-cabin-in-the-woods.jpg" },
+      { "title": "Lord of War", "imgsrc": "images/lord-of-war.jpg" }
+    ]
+  },
+  "date22": {
+    "date": "March 1, 2026",
+    "movies": [
+      { "title": "Sinners", "imgsrc": "images/sinners.jpg" }
+    ]
+  },
+  "date23": {
+    "date": "March 27, 2026",
+    "movies": [
+      { "title": "The Ninth Gate", "imgsrc": "images/the-ninth-gate.jpg" },
+      { "title": "Carrie", "imgsrc": "images/carrie.jpg" }
+    ]
+  },
+  "date24": {
+    "date": "April 18, 2026",
+    "movies": [
+      { "title": "Jaws", "imgsrc": "images/jaws.jpg" }
+    ]
+  }
 }
