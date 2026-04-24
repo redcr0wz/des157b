@@ -21,7 +21,7 @@
 
     // SELECT LIST
     function createSelectList(data) {
-        let html = '<option>CHOOSE A DATE</option>';
+        let html = '<option value="" disabled selected>CHOOSE A DATE</option>';
         const dataDates = Object.keys(data);
         console.log(dataDates);
         dataDates.forEach(function(eachDate) {
@@ -38,8 +38,13 @@
     });
 
     let loopTimer = null; 
+    let staticTimer = null;
 
     function updateInterface(value, jsonData) {
+        if (!jsonData[value]) {
+            return;
+        }
+
         const tv = document.querySelector('#tv');
         const movies = jsonData[value].movies;
         const graphic = document.querySelector('#graphic');
@@ -47,30 +52,48 @@
         if (loopTimer) {
             clearTimeout(loopTimer);
         }
-
-        if (movies.length == 0) {
-            tv.innerHTML = `<p>None :(</p>`;
-            graphic.src = 'images/pairgone.jpg'
-            return;
+        if (staticTimer) {
+            clearTimeout(staticTimer);
         }
 
-        let i = 0;
-
-        function loop() {
-            const movie = movies[i];
-            graphic.src = 'images/pair.jpg'
+        if (!movies || movies.length === 0) {
+            tv.innerHTML = `<p>None :(</p>`;
+            graphic.src = 'images/nopair.gif';
+            return;
+        } 
+        
+        if (movies.length === 1) {
+            const movie = movies[0];
+            graphic.src = 'images/pair.gif';
 
             tv.innerHTML = `
                 <p>${movie.title}</p>
                 <img src="${movie.imgsrc}" alt="${movie.title}">
             `;
+            return;
+        }
 
-            i = (i + 1) % movies.length;
+        let i = 0;
+        graphic.src = 'images/pair.gif';
 
-            loopTimer = setTimeout(loop, 3000); 
+        function loop() {
+            const movie = movies[i];
+
+            tv.innerHTML = `<img src="images/static.gif" alt="static">`;
+
+            staticTimer = setTimeout(function () {
+                tv.innerHTML = `
+                    <p>${movie.title}</p>
+                    <img src="${movie.imgsrc}" alt="${movie.title}">
+                `;
+
+                i = (i + 1) % movies.length;
+
+                loopTimer = setTimeout(loop, 2500);
+            }, 500);
         }
         loop();
-    }  
+    }
 
     getData();
 })();

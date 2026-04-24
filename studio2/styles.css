@@ -37,6 +37,15 @@ body {
     translate: 0 -60px;
 }
 
+#selector p {
+    font-size: 0.75em;
+    margin: 0;
+}
+
+#selector a {
+    color:rgb(79, 32, 74);
+}
+
 #tv {
     background-color: rgb(0, 0, 0);
     outline: 20px solid rgb(39, 32, 69);
@@ -48,6 +57,12 @@ body {
     filter: drop-shadow(2px -5px 8px rgba(4, 4, 23, 1));
     z-index: 1;
     margin-top: 17%;
+}
+
+#tv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #tv p {
@@ -112,6 +127,3 @@ body {
     from {transform: translateY(  0%);}
       to {transform: translateY(100%);}
 }
-
-
-
