@@ -34,7 +34,7 @@
         });
     });
 
-    let isDragMode = false;
+    let dragMode = false;
 
     function switchText(newText) {
         gsap.to(split.chars, {
@@ -79,8 +79,8 @@
         });
 
         // toggle text
-        isDragMode = !isDragMode;
-        switchText(isDragMode ? "Drag me!" : "Click me!");
+        dragMode = !dragMode;
+        switchText(dragMode ? "Drag me!" : "Click me!");
     });
 
     Draggable.create("#text", {
