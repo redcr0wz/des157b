@@ -1,0 +1,40 @@
+canvas {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    font-family: "Sen", sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+#bubble p {
+    background-color: rgb(239, 234, 215);
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    z-index: 1;
+}
+
+footer a, footer p {
+    color: rgb(188, 234, 236);
+    text-decoration: none;
+}
+
+#text {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(239, 234, 215);
+    z-index: 0;
+}
