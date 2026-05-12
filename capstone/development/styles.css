@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(255, 249, 240);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    margin: auto;
+}
+h1, h4 {
+    margin: 0;
+}
+p {
+    margin: 0.5em 0;
+}
+h1, h4, p {
+    color: rgb(20, 16, 16);
+    font-family: "Outfit", sans-serif;
+}
+li {
+    color: rgb(20, 16, 16);
+}
+a {
+    color:rgb(229, 37, 37)
+}
