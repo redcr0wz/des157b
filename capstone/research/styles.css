@@ -1,18 +1,11 @@
 body {
     background-color: rgb(255, 249, 240);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    width: 35vw;
+    max-width: 500px;
     margin: auto;
-    padding: 10em 0;
+    padding: 100px 0;
 }
 h1, h4 {
     margin: 0;
-}
-h1 {
-    padding-top: 3em;
 }
 p {
     margin: 0.5em 0;
