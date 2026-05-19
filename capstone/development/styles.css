@@ -1,11 +1,8 @@
 body {
     background-color: rgb(255, 249, 240);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    width: 35vw;
+    max-width: 600px;
     margin: auto;
+    padding: 100px 0;
 }
 h1, h4 {
     margin: 0;
@@ -14,12 +11,16 @@ p {
     margin: 0.5em 0;
 }
 h1, h4, p {
-    color: rgb(20, 16, 16);
+    color: rgb(50, 38, 38);
     font-family: "Outfit", sans-serif;
 }
 li {
-    color: rgb(20, 16, 16);
+    color: rgb(50, 38, 38);
 }
 a {
     color:rgb(229, 37, 37)
+}
+img {
+    display: block;
+    max-width: 600px;
 }

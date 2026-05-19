@@ -11,11 +11,11 @@ p {
     margin: 0.5em 0;
 }
 h1, h4, p {
-    color: rgb(20, 16, 16);
+    color: rgb(50, 38, 38);
     font-family: "Outfit", sans-serif;
 }
 li {
-    color: rgb(20, 16, 16);
+    color: rgb(50, 38, 38);
 }
 a {
     color:rgb(229, 37, 37)
