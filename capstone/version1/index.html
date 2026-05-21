@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- tbd -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+    <title>entertAIn</title>
+</head>
+<body>
+    <div id="sidebar">
+        <button id="logo"></button>
+        <button id="home">
+            <i class="fa-solid fa-house"></i>
+        </button>
+        <button id="explore">
+            <i class="fa-solid fa-compass"></i>
+        </button>
+        <button id="profile">
+            <i class="fa-solid fa-user"></i>
+        </button>
+        <button id="post">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <!-- <button id="more">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button> -->
+    </div>
+
+    <!-- Slider main container -->
+    <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </div> -->
+
+    <div class="video">
+        <div class="video-container"></div>
+        <div id="buttons">
+            <button class="account">
+            </button>
+            <button class="unliked" id="heart">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="comments">
+                <i class="fa-regular fa-comment"></i>
+            </button>
+            <button class="save">
+                <i class="fa-regular fa-bookmark"></i>
+            </button>
+            <button class="share">
+                <i class="fa-solid fa-share"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="right-arrows">
+        <div id="back" class="arrow disabled">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="next" class="arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </div>
+</body>
+</html>

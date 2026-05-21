@@ -1,0 +1,92 @@
+img {
+    display: block;
+}
+
+body {
+    background-color: #1B1D23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0 50px;
+}
+
+.video-container {
+    width: 400px;
+    height: 680px;
+    border-radius: 25px;
+    background-color: #3d4047;
+}
+
+#sidebar {
+    width: 50px;
+}
+
+.arrow {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #3d4047;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+.video {
+    position: relative;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+}
+
+.fa-regular, .fa-solid {
+    font-size: 32px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.fa-regular:hover, .fa-solid:hover {
+    scale: 110%;
+    color: #FF0000;
+}
+
+#post {
+    transition: all 0.5s;
+}
+
+#post:hover {
+    background-color: white;
+}
+
+#logo, .account, #post {
+    background-color: #FF0000;
+}
+
+.arrow.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.swiper {
+  width: 600px;
+  height: 100%;
+  background-color: white;
+}
