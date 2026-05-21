@@ -8,7 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <!-- tbd -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,73 +22,455 @@
     <!-- CSS -->
     <link href="styles.css" rel="stylesheet">
 
+    <!-- This is the minified production version of Parse JS -->
+    <script type="text/javascript" src="https://unpkg.com/parse/dist/parse.min.js"></script>
+
     <!-- JS -->
     <script src="script.js" defer></script>
 
-    <title>entertAIn</title>
+    <title>entertAInment</title>
 </head>
 <body>
     <div id="sidebar">
         <button id="logo"></button>
         <button id="home">
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i></a>
         </button>
         <button id="explore">
-            <i class="fa-solid fa-compass"></i>
+            <a href="https://redcr0wz.github.io/des157b/"><i class="fa-solid fa-compass"></i></a>
         </button>
         <button id="profile">
+            <!-- TODO: part of the narrative -->
             <i class="fa-solid fa-user"></i>
         </button>
         <button id="post">
+            <!-- TODO: part of the narrative -->
             <i class="fa-solid fa-plus"></i>
         </button>
-        <!-- <button id="more">
+        <button id="more">
+            <!-- TODO: credit modal -->
             <i class="fa-solid fa-ellipsis"></i>
-        </button> -->
+        </button>
     </div>
 
     <!-- Slider main container -->
-    <!-- <div class="swiper">
+    <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-        </div>
-        <div class="swiper-pagination"></div>
 
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <h1>entert<span>AI</span>nment</h1>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>what does it mean to be entertained?</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>when we watch the same mind-numbing thing</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>again</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>and</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p><span>again.</span></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>accessible content</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>right in our hands</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>addicted.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>scrolling.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>all the same.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>now what does it mean to create?</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>what does it mean to be creative?</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>when creations just get scraped</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>rehashed</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>into something with no meaning</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="swiper-slide">
+                <div class="video">
+                    <div class="video-container">
+                        <p>a no man's land of entertainment</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="account">
+                        </button>
+                        <button class="unliked" id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-regular fa-comment"></i>
+                        </button>
+                        <button class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+
+        </div>
+    
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <div class="swiper-scrollbar"></div>
-    </div> -->
-
-    <div class="video">
-        <div class="video-container"></div>
-        <div id="buttons">
-            <button class="account">
-            </button>
-            <button class="unliked" id="heart">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-            <button class="comments">
-                <i class="fa-regular fa-comment"></i>
-            </button>
-            <button class="save">
-                <i class="fa-regular fa-bookmark"></i>
-            </button>
-            <button class="share">
-                <i class="fa-solid fa-share"></i>
-            </button>
-        </div>
-    </div>
-
-    <div id="right-arrows">
-        <div id="back" class="arrow disabled">
-            <i class="fa-solid fa-chevron-up"></i>
-        </div>
-        <div id="next" class="arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </body>
 </html>
