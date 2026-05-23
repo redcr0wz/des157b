@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repeat Amount Function</h1>
+
+    <p>This function takes a string from a user and the function will repeat it to the integer set by the user in the second parameter.</p>
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            function repeatAmount(userString, amount){
+                return userString.repeat(amount);
+            }
+
+            console.log(repeatAmount("i'm repeated three times!", 3));
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const repeatAmount = function(userString, amount){
+                return userString.repeat(amount);
+            }
+
+            console.log(repeatAmount("i'm repeated three times!", 3));
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const repeatAmount = (userString, amount) => {
+                return userString.repeat(amount);
+            }
+
+            console.log(repeatAmount("i'm repeated three times!", 3));
+        </pre>
+    </code>
+
+    <footer> Lexi Allyson Sario </footer>
+    
+</body>
+</html>
