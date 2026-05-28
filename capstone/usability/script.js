@@ -336,6 +336,14 @@
     shareCloseBtn.addEventListener('click', closeShareModal);
     shareModal.addEventListener('click', e => { if (e.target === shareModal) closeShareModal(); });
 
+    // START MODAL
+    const startModal = document.querySelector('#start-modal');
+    const startCloseBtn = document.querySelector('.start-modal-close');
+    function closeStartModal() { startModal.classList.remove('show'); }
+    startCloseBtn.addEventListener('click', closeStartModal);
+    startModal.addEventListener('click', e => { if (e.target === startModal) closeStartModal(); });
+    startCloseBtn.addEventListener('click', startPostModal);
+
     // SHARED ESCAPE KEY HANDLER (consolidated)
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
@@ -344,6 +352,7 @@
             closePostModal();
             closeAccountModal();
             closeShareModal();
+            closeStartModal();
         }
     });
 
