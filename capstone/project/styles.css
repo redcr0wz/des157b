@@ -1,0 +1,450 @@
+img {
+  display: block;
+}
+
+body {
+  background-color: #1b1d23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0 50px;
+  font-family: "TikTok Sans", sans-serif;
+}
+
+.video-container {
+  width: 400px;
+  height: 680px;
+  border-radius: 25px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.video-container span,
+.heart-btn.liked .fa-solid,
+#comment-drawer-close .fa-solid {
+  color: #cc0000;
+}
+
+.video-container p {
+  font-size: 1.25em;
+  margin: 25px;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.video-container p,
+.video-container h1 {
+  position: absolute;
+  z-index: 1;
+}
+
+#sidebar {
+  width: 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.swiper-pagination-vertical {
+  color: white;
+  right: 0 !important;
+}
+
+.swiper-pagination-progressbar-fill {
+  background: white !important;
+  right: 0 !important;
+  left: auto !important;
+  transform-origin: right top !important;
+}
+
+.swiper-pagination-vertical {
+  right: 0 !important;
+  left: auto !important;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-top: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0;
+}
+
+.video {
+  position: relative;
+  margin: 0;
+  translate: -35px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: -70px;
+}
+
+.fa-regular,
+.fa-solid {
+  font-size: 32px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.fa-regular:hover,
+.fa-solid:hover {
+  scale: 110%;
+  color: #cc0000;
+}
+
+#post {
+  transition: all 0.5s;
+}
+
+#post:hover {
+  background-color: white;
+}
+
+#post {
+  background-color: #cc0000;
+}
+
+.account {
+  background-image: url('images/icon.svg');
+}
+
+#logo {
+  background-image: url("images/logo.svg");
+}
+
+.arrow.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: static !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* The modal box */
+.modal-box {
+  background-color: #1b1d23;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+
+i.fa-solid.fa-xmark {
+  font-size: 24px;
+  color: #cc0000;
+}
+
+i.fa-solid.fa-xmark:hover {
+  color: white;
+}
+
+.modal-box h3 {
+  color: white;
+}
+
+.modal-box a {
+  color: #cc0000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.modal-box a:hover,
+.modal-close:hover {
+  color: white;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #cc0000;
+  transition: all 0.5s;
+}
+
+.modal-overlay {
+  display: none;
+}
+
+.modal-overlay.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+
+span.like-count,
+span.comment-count {
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.heart-btn.liked .fa-solid {
+  color: #cc0000;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-btn.pop {
+  animation: pop 0.3s ease;
+}
+
+#comment-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: transparent;
+  pointer-events: none;
+}
+
+#comment-drawer.open {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+#comment-drawer-inner {
+  width: 100%;
+  max-width: 480px;
+  background: #1b1d23;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "TikTok Sans", sans-serif;
+}
+
+#comment-drawer.open #comment-drawer-inner {
+  transform: translateY(0);
+}
+
+#comment-drawer-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+#comment-drawer-title {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+#comment-drawer-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, background 0.2s;
+  margin: 0;
+  padding: 0;
+}
+
+#comment-drawer-close:hover {
+  color: white;
+}
+
+#comment-drawer-close .fa-solid {
+  font-size: 16px;
+}
+
+#comment-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.comment-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comment-date {
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.comment-text {
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.comment-empty,
+.comment-loading {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 13px;
+  text-align: center;
+  margin: auto;
+}
+
+#comment-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+#comment-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 10px 16px;
+  color: white;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#comment-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#comment-input:focus {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+#comment-submit {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #cc0000;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.15s;
+  margin: 0;
+  padding: 0;
+}
+
+#comment-submit:hover {
+  background: #cc0000;
+  transform: scale(1.08);
+}
+
+#comment-submit .fa-solid {
+  font-size: 15px;
+  color: white;
+}
+
+.video p {
+  font-size: 1.25em;
+  color: white;
+}
+
+.video a {
+  color: #cc0000;
+}

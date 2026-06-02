@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- This is the minified production version of Parse JS -->
+    <script type="text/javascript" src="https://unpkg.com/parse/dist/parse.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+    <title>entertAInment</title>
+  </head>
+  <body>
+    <div id="modal" class="modal-overlay">
+      <div class="modal-box">
+        <button id="closeBtn" class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <button id="logo"></button>
+      <button id="home">
+        <i class="fa-solid fa-house"></i>
+      </button>
+      <button id="explore">
+        <i class="fa-solid fa-compass"></i>
+      </button>
+      <button id="profile">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <button id="post">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button id="more">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <h1>entert<span>AI</span>nment </h1>
+              <img src="images/slide1.gif" alt="static">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>what does it mean to be entertained?</p>
+              <img src="images/slide2.gif" alt="concert">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>art getting rehashed</p>
+              <img src="images/slide3.gif" alt="concert">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>again</p>
+              <img src="images/slide4.gif" alt="group">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>and</p>
+              <img src="images/slide5.gif" alt="mango ice cream">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>
+                <span>again.</span>
+              </p>
+              <img src="images/slide6.gif" alt="party">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>could you even call it <span>art</span>? </p>
+              <img src="images/slide7.gif" alt="bus">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>it's only "<span>content</span>" now </p>
+              <img src="images/slide8.gif" alt="dog">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>short.</p>
+              <img src="images/slide9.gif" alt="guitarist">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>easy.</p>
+              <img src="images/slide10.gif" alt="mirror">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>and accessible.</p>
+              <img src="images/slide11.gif" alt="lecture">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>now, what does it mean to create?</p>
+              <img src="images/slide12.gif" alt="cat">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>what does it mean to be creative?</p>
+              <img src="images/slide13.gif" alt="table">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>when creations just get scraped</p>
+              <img src="images/slide3.gif" alt="concert">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>stolen</p>
+              <img src="images/slide2.gif" alt="concert">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>into something with no meaning</p>
+              <img src="images/slide1.gif" alt="static">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <p>into a no man's land of entertainment.</p>
+              <img src="images/slide1.gif" alt="static">
+            </div>
+            <div class="buttons">
+              <button class="account"></button>
+              <button class="heart-btn unliked">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="like-count">0</span>
+              <button class="comment-btn">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+              <span class="comment-count">0</span>
+              <button class="share">
+                <i class="fa-solid fa-share"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>did you know?</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p><a href="https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/"><b>21%</b></a> of videos on a new youtube feed are ai-generated</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>over <a href="https://dynamoi.com/learn/ai-music-distribution/tiktok-ai-content-statistics"><b>1.3 billion</b></a> tiktoks are labelled as ai-generated</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>about <a href="https://amitkumar2211.medium.com/fun-fact-ai-creates-about-34-million-images-every-single-day-99a7bbd0fd63"><b>34 million</b></a> ai-generated images are created daily</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>so think,</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>will we just be entertained by ai?</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>and</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video">
+              <p>is it even entertainment?</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </body>
+</html>
