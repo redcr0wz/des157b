@@ -54,7 +54,7 @@ body {
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	color: white;
+	color: rgba(255, 255, 255, 0.2);
 }
 
 .swiper-pagination-vertical {
@@ -496,4 +496,8 @@ span.comment-count {
 
 #bridge {
   color:white;
+}
+
+p.stats {
+	font-size: 2em;
 }
