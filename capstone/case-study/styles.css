@@ -15,25 +15,23 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", sans-serif;
     color: #333;
-}
-nav {
-    border-top: 2px solid #333;
+    background-color: rgb(255, 249, 240);
 }
 nav ul li a {
     text-decoration: none;
     display: block;
-    color:cornflowerblue;
+    color: #e52525;
     font-weight: bold;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #e52525;
     text-align: center;
     padding: 10px;
 
 }
 
 header, footer {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(252, 233, 221);
 }
 
 header, section, footer {
@@ -41,7 +39,7 @@ header, section, footer {
 }
 
 section:nth-child(even){
-    background-color: aliceblue;
+    background-color: rgb(255, 244, 237);
 }
 
 .container {
@@ -81,4 +79,9 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
+}
+
+address a, footer a, span {
+    color: #e52525;
+    text-decoration: none;
 }
