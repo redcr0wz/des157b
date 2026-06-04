@@ -313,6 +313,7 @@
             <p><a href="https://swiperjs.com/">Swiper</a></p>
             <p><a href="https://www.back4app.com/">Back4App</a></p>
             <p><a href="https://gsap.com/">GSAP</a></p>
+			<p>Footage from Lexi Allyson Sario</p>
         `,
 		leave: `
             <h3>Leave this page?</h3>
@@ -380,31 +381,31 @@
     // GSAP / TEXT ANIMATIONS
 
     // TITLE GLITCH
-    var tl = new TimelineMax({repeat: -1,repeatDelay: 2});
+    const tl = new TimelineMax({repeat: -1,repeatDelay: 2});
 
     tl.to('.glitch', 0.1, {skewX:70,ease: Power4.easeInOut})
-    .to('.glitch', 0.04, {skewX:0,ease: Power4.easeInOut})
-    .to('.glitch', 0.04, {opacity:0})
-    .to('.glitch', 0.04, {opacity:1})
-    .to('.glitch', 0.04, {x:-20})
-    .to('.glitch', 0.04, {x:0})
-    .add("split", 0)
-    .to('.top', 0.5, {x:-60,ease: Power4.easeInOut},'split')
-    .to('.bottom', 0.5, {x:60,ease: Power4.easeInOut},'split')
-    .to('.glitch', 0.08, { className: '+=redShadow'},'split')
+		.to('.glitch', 0.04, {skewX:0,ease: Power4.easeInOut})
+		.to('.glitch', 0.04, {opacity:0})
+		.to('.glitch', 0.04, {opacity:1})
+		.to('.glitch', 0.04, {x:-20})
+		.to('.glitch', 0.04, {x:0})
+		.add("split", 0)
+		.to('.top', 0.5, {x:-60,ease: Power4.easeInOut},'split')
+		.to('.bottom', 0.5, {x:60,ease: Power4.easeInOut},'split')
+		.to('.glitch', 0.08, { className: '+=redShadow'},'split')
 
-    .to('#txt', 0, { scale:1.1},'split')
-    .to('#txt', 0, { scale:1}, "+=0.02")
+		.to('#txt', 0, { scale:1.1},'split')
+		.to('#txt', 0, { scale:1}, "+=0.02")
 
-    .to('.glitch', 0.08, { className: '-=redShadow'}, "+=0.09")
-    .to('.glitch', 0.03,{ className: '+=greenShadow'},'split')
-    .to('.glitch', 0.03,{ className: '-=greenShadow'},"+=0.01")
+		.to('.glitch', 0.08, { className: '-=redShadow'}, "+=0.09")
+		.to('.glitch', 0.03,{ className: '+=greenShadow'},'split')
+		.to('.glitch', 0.03,{ className: '-=greenShadow'},"+=0.01")
 
-    .to('.top', 0.2, {x:0,ease: Power4.easeInOut})
-    .to('.bottom', 0.2, {x:0,ease: Power4.easeInOut})
+		.to('.top', 0.2, {x:0,ease: Power4.easeInOut})
+		.to('.bottom', 0.2, {x:0,ease: Power4.easeInOut})
 
-    .to('.glitch', 0.02, {scaleY:1.1,ease: Power4.easeInOut})
-    .to('.glitch', 0.04, {scaleY:1,ease: Power4.easeInOut})
+		.to('.glitch', 0.02, {scaleY:1.1,ease: Power4.easeInOut})
+		.to('.glitch', 0.04, {scaleY:1,ease: Power4.easeInOut})
 
 	// CAPTIONS
 	swiper.on('slideChangeTransitionEnd', () => {
@@ -418,17 +419,12 @@
 			type: "words"
 		});
 
-		const tl = gsap.timeline({ repeat: -1 });
+		const tl = gsap.timeline();
 
 		tl.from(split.words, {
 			opacity: 0,
 			stagger: 0.1,
 			duration: 0.4
-		})
-		.to(split.words, {
-			opacity: 0,
-			stagger: -0.1,
-			duration: 0.4
-		}, "+=1");
+		});
 	});
 }());
