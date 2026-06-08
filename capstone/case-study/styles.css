@@ -19,6 +19,7 @@ body {
     color: #333;
     background-color: rgb(255, 249, 240);
 }
+
 nav ul li a {
     text-decoration: none;
     display: block;
@@ -27,7 +28,12 @@ nav ul li a {
     border-bottom: 2px solid #e52525;
     text-align: center;
     padding: 10px;
+    transition: all 0.2s;
+}
 
+nav ul li a:hover {
+    color: rgb(255, 249, 240);
+    background-color: #e52525;;
 }
 
 header, footer {
@@ -84,4 +90,9 @@ img {
 address a, footer a, span {
     color: #e52525;
     text-decoration: none;
+}
+
+a:hover {
+    transition: all 0.2s;
+    font-weight: 800;
 }
